@@ -146,11 +146,8 @@ function addExtraProduct(element) {
 
   Products[parentID][elAttr] = element.checked;
   if (Products[parentID][elAttr]) {
-    if (Products[parentID].amount > 0) {
       Products[parentID].price += extraProducts[elAttr].price;
       Products[parentID].kcall += extraProducts[elAttr].kcall;
-
-    }
   } else {
     Products[parentID].price -= extraProducts[elAttr].price;
     Products[parentID].kcall -= extraProducts[elAttr].kcall;
